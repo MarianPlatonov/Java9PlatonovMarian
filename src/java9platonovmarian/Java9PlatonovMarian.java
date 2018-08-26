@@ -42,6 +42,12 @@ public class Java9PlatonovMarian {
      
     }
     
+    /**
+     * 
+     * @param a
+     * @param b
+     * @return sum operation a + b
+     */
     public static float sum (float a, float b){
         float sum;
         sum=a+b;
@@ -49,6 +55,12 @@ public class Java9PlatonovMarian {
         return sum;
     }
     
+    /**
+     * 
+     * @param a
+     * @param b
+     * @return substracting operation a - b
+     */
      public static float sub (float a, float b){
         float sub;
         sub=a-b;
@@ -56,13 +68,25 @@ public class Java9PlatonovMarian {
         System.out.println(a+" - "+b+" "+" = "+sub);
          return sub;
     }
-     
+    
+     /**
+      * 
+      * @param a
+      * @param b
+      * @return dividing operation a / b
+      */
     public static float div(float a, float b){
         float div= a/b;
         System.out.println(a+" / "+b+" "+" = "+div);
         return div;
     }
     
+    /**
+     * 
+     * @param a
+     * @param b
+     * @return multiplying operation  a * b
+     */
     public static float mult(float a, float b){
         float mult= a*b;
         System.out.println(a+" * "+b+" "+" = "+mult);

@@ -7,7 +7,7 @@ package java9platonovmarian;
 
 /**
  *
- * @author Marian
+ * @author Marian Platonov
  */
 public class Java9PlatonovMarian {
 
@@ -16,6 +16,18 @@ public class Java9PlatonovMarian {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        
+        System.out.println("Hello my friend! ");
+        sum(1,2);
+    }
+    
+    public static int sum (int a, int b){
+        int sum;
+        sum=a+b;
+        System.out.println("Sum of a and b = " +sum);
+        return sum;
+    
+        
     }
     
 }

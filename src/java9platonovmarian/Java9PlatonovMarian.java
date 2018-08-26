@@ -4,6 +4,9 @@
  * and open the template in the editor.
  */
 package java9platonovmarian;
+import java.util.Scanner;
+
+
 
 /**
  *
@@ -17,23 +20,53 @@ public class Java9PlatonovMarian {
     public static void main(String[] args) {
         // TODO code application logic here
         
-        System.out.println("Hello my friend! ");
-        sum(2,2);
-        decrease(9,-1);
+        Scanner username = new Scanner(System.in);
+        System.out.println("Hello. What is you name? ");
+        String user = username.nextLine();
+        System.out.println("Nice to meet you "+user);
+        System.out.println("Let's introduce some numbers to see the Java working. ");   
+        
+         Scanner sc = new Scanner(System.in);
+   
+        System.out.print("Input an float for a = ");
+        float a = sc.nextFloat();
+        System.out.print("Input an float for b = ");
+       float b =sc.nextFloat();
+        sum(a,b);
+        sub(a,b);
+        div(a,b);
+        mult(a,b);
+        
+       sc.close();
+         username.close();
+     
     }
     
-    public static int sum (int a, int b){
-        int sum;
+    public static float sum (float a, float b){
+        float sum;
         sum=a+b;
-        System.out.println("Sum of a and b = " +sum);
+        System.out.println(a+" + "+b+" "+" = "+sum);
         return sum;
     }
     
-     public static int decrease (int a, int b){
-        int decrease;
-        decrease=a-b;
-        System.out.println("Decrease of a and b = " +decrease);
-        return decrease;
+     public static float sub (float a, float b){
+        float sub;
+        sub=a-b;
+       
+        System.out.println(a+" - "+b+" "+" = "+sub);
+         return sub;
+    }
+     
+    public static float div(float a, float b){
+        float div= a/b;
+        System.out.println(a+" / "+b+" "+" = "+div);
+        return div;
+    }
+    
+    public static float mult(float a, float b){
+        float mult= a*b;
+        System.out.println(a+" * "+b+" "+" = "+mult);
+        return mult;
     }
     
 }

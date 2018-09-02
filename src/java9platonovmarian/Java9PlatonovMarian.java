@@ -38,8 +38,17 @@ public class Java9PlatonovMarian {
         mult(a,b);
         
        sc.close();
-         username.close();
-     
+       username.close();
+       
+       int multiply=1;
+       System.out.println();
+           
+       for (int i=1;i<=10;i++){
+            System.out.print(i+" * "+i+" = "+multiply*i);
+            System.out.println();
+            multiply++;
+       }
+    
     }
     
     /**

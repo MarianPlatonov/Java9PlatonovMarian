@@ -24,7 +24,7 @@ public class Java9PlatonovMarian {
         System.out.println("Hello. What is you name? ");
         String user = username.nextLine();
         System.out.println("Nice to meet you "+user);
-        System.out.println("Let's introduce some numbers to see the Java working. ");   
+        System.out.println("\nLet's introduce some numbers to that the Java program is working. ");   
         
          Scanner sc = new Scanner(System.in);
    
@@ -32,22 +32,42 @@ public class Java9PlatonovMarian {
         float a = sc.nextFloat();
         System.out.print("Input an float for b = ");
        float b =sc.nextFloat();
+    
+      
         sum(a,b);
         sub(a,b);
+        
+      if(b==0.0){
+      System.out.println("Invalid dividing operation "+a+"/"+b+"\n"+"Please input another value for b that is grater than 0");
+           }
+      else{
         div(a,b);
+      }
+      
         mult(a,b);
         
        sc.close();
        username.close();
        
-       int multiply=1;
+   
        System.out.println();
+        System.out.println("Multiplying table from 1 to 10\n");
+           int multiply=1;
            
        for (int i=1;i<=10;i++){
-            System.out.print(i+" * "+i+" = "+multiply*i);
-            System.out.println();
-            multiply++;
+           for(multiply=1;multiply<=10;multiply++){
+               
+            System.out.print(multiply+" * "+i+" = "+multiply*i+"\t"+"|"+"\t");
+          
+       }           
+           System.out.println();
+         
+           multiply++;
+           
+          
        }
+      
+ 
     
     }
     

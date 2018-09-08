@@ -50,9 +50,9 @@ public class Java9PlatonovMarian {
        username.close();
        
    
-       System.out.println();
+        System.out.println();
         System.out.println("Multiplying table from 1 to 10\n");
-           int multiply=1;
+        int multiply=1;
            
        for (int i=1;i<=10;i++){
            for(multiply=1;multiply<=10;multiply++){
@@ -66,9 +66,7 @@ public class Java9PlatonovMarian {
            
           
        }
-      
- 
-    
+        
     }
     
     /**

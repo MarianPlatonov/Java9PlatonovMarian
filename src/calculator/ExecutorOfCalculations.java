@@ -21,7 +21,7 @@ public class ExecutorOfCalculations {
    
     System.out.print("Please introduce your first number: ");
     float a = numbers.nextFloat();
-        
+    
     Scanner operator = new Scanner(System.in);
         
     System.out.print("Please introduce an operator (+,-,*,/): ");
@@ -30,7 +30,7 @@ public class ExecutorOfCalculations {
     System.out.print("Please introduce your second number: ");
     float b =numbers.nextFloat();
        
-        
+    
     System.out.print("Please introduce \"=\": ");
     String equal=operator.nextLine();
     if(equal.equals("=")){
@@ -54,19 +54,19 @@ public class ExecutorOfCalculations {
             break;
             default:
             throw new IllegalArgumentException("Invalid operand: " + oper+" Please introduce an operator (+,-,*,/)");    
-       }   
-      } 
+        }   
+    } 
      
     else {
         System.out.println("Illegal operator!. Sorry, you introduced wrong data. I quit \":)\" ");  
         System.exit(0);
                   
    }
-       
+     
        numbers.close();
        operator.close();
-     
-         
+       
+              
        }   
     
 }

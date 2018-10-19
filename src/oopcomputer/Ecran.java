@@ -40,9 +40,17 @@ public class Ecran {
             case "=":
                 break;
             default: 
-                
+                this.afisaj = this.afisaj + afisaj;
+                int operandUnu = stapana.getAlu().getOperandUnu();
+                int afisajInt = Integer.parseInt(afisaj);
+                if( 0 == operandUnu || ' ' == stapana.getAlu().getOperator()){
+                 stapana.getAlu().setOperandUnu(Integer.parseInt(this.afisaj));   
+                }
+                else{
+                    
+                }
         }
-        this.afisaj = afisaj;
+      
     }
     /**
      * Private method for computation

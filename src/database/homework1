@@ -1,0 +1,35 @@
+create table test ( myid integer );
+
+insert into test values (0);
+
+insert into test values (1);
+
+select * from test;
+
+create table FIRSTTABLE
+(ID INT PRIMARY KEY,
+NAME VARCHAR(24));
+
+insert into FIRSTTABLE values (10, 'TEN');
+
+insert into FIRSTTABLE values (20, 'TWENTY');
+
+insert into FIRSTTABLE values (30, 'THIRTY');
+
+select * from FIRSTTABLE;
+
+create table SECONDTABLE
+(ID INT PRIMARY KEY,
+NAME VARCHAR(24));
+
+insert into SECONDTABLE values (100, 'ONE HUNDRED');
+
+insert into SECONDTABLE values (200, 'TWO HUNDRED');
+
+insert into SECONDTABLE values (300, 'THREE HUNDRED');
+
+select * from SECONDTABLE;
+
+select * from SECONDTABLE where name='THREE HUNDRED';
+
+

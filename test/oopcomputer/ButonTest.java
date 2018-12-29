@@ -10,7 +10,7 @@ import static org.junit.Assert.*;
 
 /**
  *
- * @author Marian Platonov
+ * @author gheor
  */
 public class ButonTest {
     

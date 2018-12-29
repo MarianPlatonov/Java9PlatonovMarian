@@ -22,12 +22,12 @@ public class AluTest {
     public void testGetOperator() {
         System.out.println("getOperator");
         Alu instance = new Alu();
-        instance.setOperator(operator);
+        instance.setOperator('+');
         Character expResult = '+';
         Character result = instance.getOperator();
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        //fail("The test case is a prototype.");
     }
 
     /**
@@ -36,11 +36,13 @@ public class AluTest {
     @Test
     public void testSetOperator() {
         System.out.println("setOperator");
-        Character operator = null;
+        Character operator = '+';
         Alu instance = new Alu();
         instance.setOperator(operator);
+        Character result = instance.getOperator();
+        assertEquals(operator, result);
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        //fail("The test case is a prototype.");
     }
 
     /**
@@ -50,11 +52,12 @@ public class AluTest {
     public void testGetOperandUnu() {
         System.out.println("getOperandUnu");
         Alu instance = new Alu();
-        Integer expResult = null;
+        instance.setOperandUnu(123);
+        Integer expResult = 123;
         Integer result = instance.getOperandUnu();
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        //fail("The test case is a prototype.");
     }
 
     /**

@@ -9,23 +9,21 @@ package oopcomputer;
  */
 public class Ecran {
 
+    private String afisaj = "0";
+    private Carcasa stapana;
+    
     public Ecran(Carcasa nouaStapana) {
         this.stapana = nouaStapana;
     }
-    
-    private String afisaj = "0";
-    
-    private Carcasa stapana;
-    
-    
     
     public String getAfisaj() {
         return afisaj;
     }
 
-    public void setAfisaj(String afisaj) {
-        switch (afisaj){
-            case "+": 
+    public void setAfisaj(String noulAfisaj) {
+        
+        switch (noulAfisaj) {
+            case "+":
                 operatiuneLocala('+');
                 break;
             case "-":
@@ -33,32 +31,44 @@ public class Ecran {
                 break;
             case "*":
                 operatiuneLocala('*');
-               break;
+                break;    
             case "/":
                 operatiuneLocala('/');
-                break;
+                break;    
             case "=":
-                break;
-            default: 
-                this.afisaj = this.afisaj + afisaj;
-                int operandUnu = stapana.getAlu().getOperandUnu();
+                 System.out.println(afisaj);
+                 stapana.getAlu().setOperandDoi(Integer.parseInt(this.afisaj));
+                 afisaj = noulAfisaj;
+                 stapana.getAlu().calculeaza();
+                 System.out.println(afisaj);
+                 System.out.println(stapana.getAlu().getRezultat());
+                 break;  
+            default:    
+                afisaj = afisaj + noulAfisaj;
                 int afisajInt = Integer.parseInt(afisaj);
-                if( 0 == operandUnu || ' ' == stapana.getAlu().getOperator()){
-                 stapana.getAlu().setOperandUnu(Integer.parseInt(this.afisaj));   
+                int operandUnu = stapana.getAlu().getOperandUnu();
+                int operandDoi = stapana.getAlu().getOperandDoi();
+                
+                if(0 == operandUnu || ' ' == stapana.getAlu().getOperator()){
+                    stapana.getAlu().setOperandUnu(afisajInt);
+                    System.out.println(afisaj);
                 }
-                else{
+                  
+                else if (' ' == operandDoi || ' ' == stapana.getAlu().getOperator()){
+                   stapana.getAlu().setOperandDoi(afisajInt);
+                   System.out.println(afisaj);
                     
                 }
         }
-      
     }
     /**
      * Private method for computation
      */
     private void operatiuneLocala(char c){
-            stapana.getAlu().setOperandUnu(Integer.getInteger(afisaj));
-                stapana.getAlu().setOperator(c);
-                afisaj = Character.toString(c);
-}
-}
-
+        stapana.getAlu().setOperandUnu(Integer.parseInt(afisaj));
+        stapana.getAlu().setOperator(c);
+        afisaj = Character.toString(c);
+        System.out.println(afisaj);
+        afisaj="0";
+    }
+} 

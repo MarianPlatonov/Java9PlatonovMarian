@@ -28,7 +28,7 @@ public class EcranTest {
         String result = instance.getAfisaj();
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        //fail("The test case is a prototype.");
     }
 
     /**
@@ -41,7 +41,7 @@ public class EcranTest {
         Ecran instance = null;
         instance.setAfisaj(afisaj);
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        //fail("The test case is a prototype.");
     }
     
 }

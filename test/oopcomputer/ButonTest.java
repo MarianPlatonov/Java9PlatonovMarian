@@ -7,6 +7,7 @@ package oopcomputer;
 
 import org.junit.Test;
 import static org.junit.Assert.*;
+import org.junit.Before;
 
 /**
  *
@@ -17,6 +18,8 @@ public class ButonTest {
     public ButonTest() {
     }
 
+   
+
     /**
      * Test of apasa method, of class Buton.
      */
@@ -26,7 +29,7 @@ public class ButonTest {
         Buton instance = null;
         instance.apasa();
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        //fail("The test case is a prototype.");
     }
     
 }

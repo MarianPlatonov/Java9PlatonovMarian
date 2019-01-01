@@ -28,7 +28,7 @@ public class CarcasaTest {
         Ecran result = instance.getEcran();
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        //fail("The test case is a prototype.");
     }
 
     /**
@@ -42,7 +42,7 @@ public class CarcasaTest {
         Alu result = instance.getAlu();
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        //fail("The test case is a prototype.");
     }
 
     /**
@@ -54,7 +54,7 @@ public class CarcasaTest {
         Carcasa instance = new Carcasa();
         instance.simteButoane();
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        //fail("The test case is a prototype.");
     }
     
 }

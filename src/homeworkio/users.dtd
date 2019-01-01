@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!--
+users DTD 
+-->
+
+<!-- TODO define user vocabulary/syntax.   
+one users table has more users
+one user has more username, password-->
+<!ELEMENT users (user)*>
+<!ELEMENT user (username,password)*>
+<!ELEMENT username (#PCDATA)>
+<!ELEMENT password (#PCDATA)>

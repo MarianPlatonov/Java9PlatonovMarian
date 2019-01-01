@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE users SYSTEM "users.dtd">
+<users>
+     <user>
+          <username>Bordeianu</username>
+          <password>bordeainul</password>
+     </user>
+     <user>
+          <username>Radu</username>
+          <password>raducelu</password>
+     </user>
+     <user>
+          <username>Gheorghe</username>
+          <password>parola123</password>
+     </user>
+     <user>
+          <username>A-sti</username>
+          <password>parola456</password>
+     </user>
+</users>
